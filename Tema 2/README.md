@@ -12,3 +12,12 @@ Ejemplo 2
 METODO REGLA FALSA
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/cecdcab2-7d90-4113-9375-6015a0044279)
+
+Metodo Newton Raphson
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/996084d5-058b-49ba-b4d5-94ea1b0fc89f)
+
+
+Metodo de la secante
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/bdaf6cd0-86ab-4075-b6b9-831ad042415f)
