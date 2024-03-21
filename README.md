@@ -555,17 +555,27 @@ Escalonamiento: Convertimos todos los elementos debajo del pivote en ceros, util
 
 ## Ejemplo 1
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/3a376ee5-0126-42d2-909c-a57c5bd2daf7)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/230d0971-fb8d-419e-bb6f-c77479142103)
+
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/0fc9c903-f3d8-4fa4-b0ef-63b056bd2a6d)
 
 ## Ejemplo 2
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/995e3c85-013a-49bd-ba7f-1b54ab053b2e)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/de440c60-bdeb-4498-9737-9f8df80d89c2)
+
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/40ad4f99-3581-4643-9553-bbd7e1524dd3)
 
@@ -573,26 +583,38 @@ Escalonamiento: Convertimos todos los elementos debajo del pivote en ceros, util
 
 ## Ejemplo 3
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/e3706641-99e0-4b8f-8048-9e6f72b89cf8)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/725c751e-6086-4184-9143-07dcc5589136)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/84447f21-399b-4707-aaa3-62d01fd05767)
 
 ## Ejemplo 4
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/250da839-6831-47b8-a974-6522a47e298b)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/4a85f20a-9072-42a6-b033-f4065cc5bb71)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/d9e18a9e-1259-4801-abc4-c7d005b49b23)
 
 
 ## Ejemplo 5
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/a7358a9c-3f3a-4b04-ba8d-42cc1b2ea91d)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/85b922eb-83a1-42db-81eb-2a1435ce72f9)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/e1f3ef3d-dd53-4f14-b6ab-082d3d8d3e67)
 
@@ -708,42 +730,62 @@ Convergencia: Si se ha alcanzado la convergencia, devolver el vector de solucion
 
 ## Ejemplo 1
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/e12652c0-3407-4fb1-84d0-fd402bc1e8d3)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/1969ac1f-202d-41da-a533-8ac8f4a995ee)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/e1fc71c9-beff-4c26-89ee-719b8f3dd32e)
 
 ## Ejemplo 2
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/8e43e1fa-1596-4765-9be6-d25ed2423f9b)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/308953d4-f618-405d-8d1d-86a945a4be30)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/55d82ccf-23ce-4f06-911b-cef7a84e85fe)
 
 ## Ejemplo 3
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/f0c0c570-c266-4a5e-81a6-2ff3c9b9332b)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/31ef96ce-dd82-4381-b718-62ea7ed70582)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/df112e9f-c893-44d6-b82d-22344b88d0eb)
 
 ## Ejemplo 4
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/5f720301-4cf4-4afc-a495-d8a48b3b79e9)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/aca01853-0948-45e8-9529-e1f26ea3248a)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/653f3ff1-9c36-4a84-a222-2ac2b0a8d049)
 
 
 ## Ejemplo 5
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/9544e680-3f53-4d3c-9ff4-4ed72fcb4d12)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/51d4ea0b-fe2c-44a2-87b4-474b9ccce24e)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/d27cf32b-ba74-4bf4-af52-bb2e14ff546e)
 
