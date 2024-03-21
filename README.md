@@ -1,9 +1,17 @@
 
 ## Repositorio de Problemas y Programas de Métodos Numéricos
 
-¡Bienvenido al repositorio de Métodos Numéricos Tema 3 - insertar titulodel tema !
+¡Bienvenido al repositorio de Métodos Numéricos Tema 3 - Métodos de solución de sistemas de ecuaciones lineales !
 
-Aquí encontrarás una colección completa de **problemarios**, **programas** y **pruebas de ejecución** relacionados con los diferentes metodos de solución de sistemas de ecuaciones lineales de la materia de Métodos Numéricos. 
+Aquí encontrarás una colección completa de **algoritmos**, **programas** y **pruebas de ejecución** relacionados con los diferentes metodos de solución de sistemas de ecuaciones lineales de la materia de Métodos Numéricos:
+
+Eliminación Gaussiana
+
+Gauss Jordan
+
+Gauss Seidel
+
+Jacobi
 
 ## Contenido del Repositorio
 
@@ -13,6 +21,8 @@ Aquí encontrarás una colección completa de **problemarios**, **programas** y 
 - [Descripción](#descripción-gauss-jordan)
 - [Algoritmo](#algoritmo-gauss-jordan)
 - [Ejemplos](#ejemplos-gauss-jordan)
+- [Programa](./Metodo_GaussJordan/)
+
 
 ## Método Gauss Seidel
 
