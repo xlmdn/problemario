@@ -23,7 +23,7 @@ En este repositorio, encontrarás no solo la descripción teórica de cada méto
 - [Descripción](#descripción-gauss-jordan)
 - [Algoritmo](#algoritmo-gauss-jordan)
 - [Ejemplos](#ejemplos-gauss-jordan)
-- [Programa](./Metodo_GaussJordan/)
+- [Implementación](#implementacion-gauss-jordan)
 
 
 ## Método Gauss Seidel
@@ -31,21 +31,21 @@ En este repositorio, encontrarás no solo la descripción teórica de cada méto
 - [Descripción](#descripción-gauss-seidel)
 - [Algoritmo](#algoritmo-gauss-seidel)
 - [Ejemplos](#ejemplos-gauss-seidel)
-- [Programa](./metodo_GaussSeidel/)
+- [Implementación](#implementación-gauss-seidel)
 
 ## Método Eliminación Gaussiana
 
 - [Descripción](#descripción-eliminación-gaussiana)
 - [Algoritmo](#algoritmo-eliminación-gaussiana)
 - [Ejemplos](#ejemplos-eliminación-gaussiana)
--  [Programa](./Eliminacion_gauss/)
+-  [Implementación](#implementación-eliminación-gaussiana)
 
 ## Método Jacobi
 
 - [Descripción](#descripción-jacobi)
 - [Algoritmo](#algoritmo-jacobi)
 - [Ejemplos](#ejemplos-jacobi)
-- [Programa](./MetodoJacobi/)
+- [Implementación](implementación-jacobi)
 ---
 
 ## Método Gauss Jordan
@@ -65,6 +65,104 @@ El Método de Gauss-Jordan es un algoritmo utilizado para resolver sistemas de e
 cambiar el orden de las filas, multiplicar o dividir todos los elementos de una fila por un número distinto de cero, o sustituir una fila por la suma de esa misma fila y otra fila multiplicada por un número. 
 
 -Una vez que se ha alcanzado la forma de matriz identidad, las soluciones del sistema de ecuaciones son simplemente los términos independientes de la matriz resultante.
+
+## Implementacion Gauss Jordan
+
+
+
+
+
+    public Metodo_GaussJordan(int n) {
+        this.n = n;
+        matriz = new double[n][n];
+        vector = new double[n];
+    }
+
+    public void ingresarMatrizYVector() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingrese los coeficientes de la matriz:");
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print("Ingrese el coeficiente para la fila " + (i + 1) + ", columna " + (j + 1) + ": ");
+                matriz[i][j] = scanner.nextDouble();
+            }
+        }
+
+        System.out.println("Ingrese el vector de resultados:");
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Ingrese el valor para la fila " + (i + 1) + ": ");
+            vector[i] = scanner.nextDouble();
+        }
+
+        scanner.close();
+    }
+
+    public void resolver() {
+        // Método de Gauss-Jordan
+        for (int i = 0; i < n; i++) {
+            // Encontrar la fila con el elemento más grande en la columna actual
+            int maxRow = i;
+            for (int k = i + 1; k < n; k++) {
+                if (Math.abs(matriz[k][i]) > Math.abs(matriz[maxRow][i])) {
+                    maxRow = k;
+                }
+            }
+            
+            // Intercambiar filas si es necesario
+            if (maxRow != i) {
+                double[] temp = matriz[i];
+                matriz[i] = matriz[maxRow];
+                matriz[maxRow] = temp;
+
+                double tempB = vector[i];
+                vector[i] = vector[maxRow];
+                vector[maxRow] = tempB;
+            }
+
+            // Hacer la fila actual  coeficiente líder igual a 1
+            double leadingCoefficient = matriz[i][i];
+            for (int j = i; j < n; j++) {
+                matriz[i][j] /= leadingCoefficient;
+            }
+            vector[i] /= leadingCoefficient;
+
+            // Hacer cero todos los demás elementos en la columna actual
+            for (int k = 0; k < n; k++) {
+                if (k != i) {
+                    double factor = matriz[k][i];
+                    for (int j = i; j < n; j++) {
+                        matriz[k][j] -= factor * matriz[i][j];
+                    }
+                    vector[k] -= factor * vector[i];
+                }
+            }
+        }
+    }
+
+    public void imprimirSolucion() {
+        System.out.println("La solución del sistema de ecuaciones es:");
+        for (int i = 0; i < n; i++) {
+            System.out.println("x" + (i + 1) + " = " + vector[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el tamaño de la matriz y el vector: ");
+        int n = scanner.nextInt();
+
+        Metodo_GaussJordan solucionador = new Metodo_GaussJordan(n);
+        solucionador.ingresarMatrizYVector();
+        solucionador.resolver();
+        solucionador.imprimirSolucion();
+
+        scanner.close();
+    }
+
 
 ## Ejemplos Gauss Jordan
 
@@ -142,6 +240,98 @@ Repetir hasta convergencia.
 
 -Salida: Tomar las soluciones aproximadas como soluciones del sistema.
 
+## Implementación Gauss Seidel
+
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el tamaño de la matriz y el vector de resultados: ");
+        int n = scanner.nextInt();
+
+        double[][] matrizA = new double[n][n];
+        double[] vectorB = new double[n];
+
+        System.out.println("Ingrese los elementos de la matriz A:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                matrizA[i][j] = scanner.nextDouble();
+            }
+        }
+
+        System.out.println("Ingrese el vector de resultados b:");
+        for (int i = 0; i < n; i++) {
+            vectorB[i] = scanner.nextDouble();
+        }
+
+        System.out.println("Matriz A:");
+        imprimirMatriz(matrizA);
+
+        System.out.println("Vector b:");
+        imprimirVector(vectorB);
+
+        double[] vectorX = new double[n];
+        double[] vectorXNuevo = new double[n];
+        int maxIteraciones = 1000;
+        double tolerancia = 1e-6;
+
+        for (int iteracion = 0; iteracion < maxIteraciones; iteracion++) {
+            for (int i = 0; i < n; i++) {
+                double suma = 0.0;
+                for (int j = 0; j < n; j++) {
+                    if (j != i) {
+                        suma += matrizA[i][j] * vectorXNuevo[j];
+                    }
+                }
+                vectorXNuevo[i] = (vectorB[i] - suma) / matrizA[i][i];
+            }
+            if (norma(restar(vectorXNuevo, vectorX)) < tolerancia) {
+                vectorX = vectorXNuevo.clone();
+                break;
+            }
+            vectorX = vectorXNuevo.clone();
+        }
+
+        System.out.println("La solución al sistema de ecuaciones es:");
+        imprimirVector(vectorX);
+    }
+
+    public static double norma(double[] v) {
+        double suma = 0.0;
+        for (double num : v) {
+            suma += num * num;
+        }
+        return Math.sqrt(suma);
+    }
+
+    public static double[] restar(double[] v1, double[] v2) {
+        int n = v1.length;
+        double[] resultado = new double[n];
+        for (int i = 0; i < n; i++) {
+            resultado[i] = v1[i] - v2[i];
+        }
+        return resultado;
+    }
+
+    public static void imprimirMatriz(double[][] matriz) {
+        for (double[] fila : matriz) {
+            for (double num : fila) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void imprimirVector(double[] vector) {
+        for (double num : vector) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+
+
+
 ### Ejemplos Gauss Seidel
 
 ## Ejemplo 1
@@ -210,6 +400,113 @@ Escalonamiento: Convertimos todos los elementos debajo del pivote en ceros, util
 
 -Sustitución hacia atrás (si es necesario): Si el sistema tiene una solución única, realizamos la sustitución hacia atrás para encontrar los valores de las incógnitas.
 
+# Implementación Eliminación Gaussiana
+
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Pedir al usuario las dimensiones de la matriz
+        System.out.println("Ingrese el número de filas de la matriz:");
+        int filas = scanner.nextInt();
+        System.out.println("Ingrese el número de columnas de la matriz:");
+        int columnas = scanner.nextInt();
+
+        // Declarar las matrices y el vector
+        double[][] A = new double[filas][columnas];
+        double[][] B = new double[filas][1];
+
+        // Pedir al usuario los valores de la matriz A
+        System.out.println("Ingrese los elementos de la matriz A:");
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                System.out.print("A[" + i + "][" + j + "]: ");
+                A[i][j] = scanner.nextDouble();
+            }
+        }
+
+        // Pedir al usuario los valores del vector B
+        System.out.println("Ingrese los elementos del vector B:");
+        for (int i = 0; i < filas; i++) {
+            System.out.print("B[" + i + "]: ");
+            B[i][0] = scanner.nextDouble();
+        }
+
+        // Realizar el algoritmo de eliminación de Gauss
+        // Copiamos las matrices originales y las hacemos de tipo flotante
+        double[][] A_copy = new double[A.length][A[0].length];
+        double[][] B_copy = new double[B.length][B[0].length];
+
+        for (int i = 0; i < A.length; i++) {
+            A_copy[i] = Arrays.copyOf(A[i], A[i].length);
+            B_copy[i] = Arrays.copyOf(B[i], B[i].length);
+        }
+
+        // Se calcula el tamaño del vector
+        int N = B.length;
+
+        // Se recorre la matriz
+        for (int i = 0; i < N; i++) {
+            // Normalización
+            double pivot = A_copy[i][i];
+            System.out.println("Mi pivote es: " + pivot);
+            for (int j = 0; j < A_copy[i].length; j++) {
+                A_copy[i][j] /= pivot;
+            }
+            B_copy[i][0] /= pivot;
+            System.out.println("\nSe divide el renglon por el pivote:");
+            printMatrix(A_copy);
+            System.out.println("\nSe divide el vector por el pivote:");
+            printMatrix(B_copy);
+
+            // Eliminación hacia adelante
+            for (int j = i + 1; j < N; j++) {
+                double factor = A_copy[j][i];
+                System.out.println("\nConvertir en cero la matriz");
+                System.out.println(factor);
+                for (int k = 0; k < A_copy[j].length; k++) {
+                    A_copy[j][k] -= factor * A_copy[i][k];
+                }
+                B_copy[j][0] -= factor * B_copy[i][0];
+                printMatrix(A_copy);
+                printMatrix(B_copy);
+            }
+        }
+
+        // Sustitución hacia atrás
+        double[] x = new double[N];
+        for (int i = N - 1; i >= 0; i--) {
+            System.out.println("\nIteracion " + i);
+            System.out.println("B_copy[" + i + "]: " + B_copy[i][0]);
+            System.out.println("A_copy[" + i + ", " + (i + 1) + ":]: " + Arrays.toString(Arrays.copyOfRange(A_copy[i], i + 1, A_copy[i].length)));
+            System.out.println("x[" + (i + 1) + ":]: " + Arrays.toString(Arrays.copyOfRange(x, i + 1, x.length)));
+            x[i] = B_copy[i][0];
+            for (int j = i + 1; j < N; j++) {
+                x[i] -= A_copy[i][j] * x[j];
+            }
+            System.out.println("x[" + i + "]: " + x[i]);
+        }
+
+        // Resultados
+        System.out.println("\nMatriz A triangularizada:");
+        printMatrix(A_copy);
+        System.out.println("\nVector B triangularizado:");
+        printMatrix(B_copy);
+        System.out.println("\nSolucion:");
+        System.out.println(Arrays.toString(x));
+
+        scanner.close(); // Cerrar el scanner
+    }
+
+    public static void printMatrix(double[][] matrix) {
+        for (double[] row : matrix) {
+            System.out.println(Arrays.toString(row));
+        }
+    }
+
+
+
 ### Ejemplos Eliminación Gaussiana
 
 ## Ejemplo 1
@@ -276,6 +573,92 @@ El método de Jacobi es un algoritmo iterativo utilizado para resolver sistemas 
 Criterio de parada: Verificar si se ha alcanzado la convergencia.
 
 Convergencia: Si se ha alcanzado la convergencia, devolver el vector de soluciones aproximado.
+
+# Implementación Jacobi
+
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Solicitar el tamaño del sistema
+        System.out.print("Ingrese el tamaño del sistema: ");
+        int tam = sc.nextInt();
+
+        // Validar el tamaño del sistema
+        if (tam < 2) {
+            System.out.println("El tamaño del sistema debe ser mayor o igual a 2.");
+            return;
+        }
+
+        // Solicitar la matriz de coeficientes y el vector de resultados
+        double[][] matrizCoeficientes = new double[tam][tam];
+        double[] vectorResultados = new double[tam];
+
+        System.out.println("Ingrese la matriz de coeficientes:");
+        for (int i = 0; i < tam; i++) {
+            for (int j = 0; j < tam; j++) {
+                System.out.print("Ingrese el elemento [" + (i + 1) + "][" + (j + 1) + "]: ");
+                matrizCoeficientes[i][j] = sc.nextDouble();
+            }
+        }
+
+        System.out.println("Ingrese el vector de resultados:");
+        for (int i = 0; i < tam; i++) {
+            System.out.print("Ingrese el elemento [" + (i + 1) + "]: ");
+            vectorResultados[i] = sc.nextDouble();
+        }
+
+        // Definir el vector inicial (se quedan en 0)
+        double[] vectorInicial = new double[tam];
+        double[] vectorAnterior = new double[tam];
+
+        int maxIteraciones = 50;
+
+        // Realizar iteraciones en el método de Jacobi
+        for (int k = 0; k < maxIteraciones; k++) {
+            System.out.print("Iteración " + (k + 1) + ": ");
+
+            // Calcular nuevos valores de x
+            double[] x = new double[tam];
+            for (int i = 0; i < tam; i++) {
+                double sum = 0;
+                for (int j = 0; j < tam; j++) {
+                    if (j != i) {
+                        sum += matrizCoeficientes[i][j] * vectorInicial[j];
+                    }
+                }
+                x[i] = (vectorResultados[i] - sum) / matrizCoeficientes[i][i];
+            }
+
+            double errorAbsoluto = calcularErrorAbsoluto(x, vectorAnterior);
+
+            if (k > 0 && errorAbsoluto < 0.05) {
+                System.out.println("Error absoluto menor al 5% en la iteración " + (k + 1) + ".");
+                break; // Romper el ciclo
+            }
+
+            // Mostrar resultados de la iteración
+            for (int i = 0; i < tam; i++) {
+                System.out.printf("x%d = %.4f ", i + 1, x[i]);
+            }
+            System.out.println();
+
+            // Actualizar el vector inicial y el vector anterior para la próxima iteración
+            System.arraycopy(x, 0, vectorInicial, 0, tam);
+            System.arraycopy(x, 0, vectorAnterior, 0, tam);
+        }
+    }
+
+    private static double calcularErrorAbsoluto(double[] vectorActual, double[] vectorAnterior) {
+        double maxError = 0;
+        for (int i = 0; i < vectorActual.length; i++) {
+            double error = Math.abs((vectorActual[i] - vectorAnterior[i]) / Math.abs(vectorActual[i]));
+            maxError = Math.max(maxError, error);
+        }
+        return maxError;
+    }
+
+
 
 ### Ejemplos Jacobi
 
