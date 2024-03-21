@@ -1,25 +1,101 @@
 
 ## Repositorio de Problemas y Programas de Métodos Numéricos
 
-¡Bienvenido al repositorio de Métodos Numéricos!
+¡Bienvenido al repositorio de Métodos Numéricos Tema 3 - !
 
-Aquí encontrarás una colección completa de **problemarios**, **programas** y **pruebas de ejecución** relacionados con los **temas 2 y 3** de la materia de Métodos Numéricos. 
+Aquí encontrarás una colección completa de **problemarios**, **programas** y **pruebas de ejecución** relacionados con los diferentes metodos de solución de sistemas de ecuaciones lineales de la materia de Métodos Numéricos. 
 
 ## Contenido del Repositorio
 
-  ## [Tema 2 - Métodos de solución de ecuaciones](./Tema%202)
-  ## [Tema 3 - Métodos de solución de sistemas de ecuaciones lineales](./Tema%203)
+# Índice
 
+1. [Método Gauss Jordan](#método-gauss-jordan)
+2. [Método Gauss Seidel](#método-gauss-seidel)
+3. [Método Eliminación Gaussiana](#método-eliminación-gaussiana)
+4. [Método Jacobi](#método-jacobi)
 
-2. **Programas y Códigos Fuente:** Además de los problemarios, también hemos incluido una selección de programas y códigos fuente escritos en diversos lenguajes de programación. Estos programas están diseñados para ilustrar la implementación práctica de los métodos numéricos discutidos en los temas 2 y 3. Puedes revisar estos códigos para comprender mejor cómo se aplican los algoritmos en la práctica y cómo se resuelven problemas específicos utilizando métodos numéricos.
+## Método Gauss Jordan
 
-3. **Pruebas de Ejecución:** Para ayudarte a familiarizarte con la ejecución de los programas y la aplicación de los métodos numéricos, hemos proporcionado pruebas de ejecución detalladas. Estas pruebas están diseñadas para guiar tu experiencia práctica, mostrándote paso a paso cómo ejecutar los programas y cómo interpretar los resultados obtenidos.
+- [Descripción](#descripción-gauss-jordan)
+- [Algoritmo](#algoritmo-gauss-jordan)
+- [Ejemplos](#ejemplos-gauss-jordan)
 
-## Cómo Utilizar este Repositorio:
+## Método Gauss Seidel
 
-- Explora los problemarios para mejorar tu comprensión de los conceptos teóricos.
-- Examina los programas y códigos fuente para ver cómo se implementan los métodos numéricos en la práctica.
-- Sigue las pruebas de ejecución para aprender cómo ejecutar programas y analizar los resultados obtenidos.
+- [Descripción](#descripción-gauss-seidel)
+- [Algoritmo](#algoritmo-gauss-seidel)
+- [Ejemplos](#ejemplos-gauss-seidel)
+
+## Método Eliminación Gaussiana
+
+- [Descripción](#descripción-eliminación-gaussiana)
+- [Algoritmo](#algoritmo-eliminación-gaussiana)
+- [Ejemplos](#ejemplos-eliminación-gaussiana)
+
+## Método Jacobi
+
+- [Descripción](#descripción-jacobi)
+- [Algoritmo](#algoritmo-jacobi)
+- [Ejemplos](#ejemplos-jacobi)
+
+---
+
+## Método Gauss Jordan
+
+### Descripción Gauss Jordan
+
+Aquí se proporcionará una descripción general del Método Gauss Jordan, incluyendo su origen, fundamentos teóricos y condiciones de aplicabilidad.
+
+### Algoritmo Gauss Jordan
+
+Se presentará el algoritmo paso a paso del Método Gauss Jordan, detallando los cálculos necesarios para resolver sistemas de ecuaciones utilizando este método.
+
+### Ejemplos Gauss Jordan
+
+Se incluirán ejemplos prácticos de aplicación del Método Gauss Jordan para resolver sistemas de ecuaciones lineales, junto con su correspondiente explicación y análisis de resultados.
+
+## Método Gauss Seidel
+
+### Descripción Gauss Seidel
+
+Aquí se proporcionará una descripción general del Método Gauss Seidel, incluyendo su origen, fundamentos teóricos y condiciones de aplicabilidad.
+
+### Algoritmo Gauss Seidel
+
+Se presentará el algoritmo paso a paso del Método Gauss Seidel, detallando los cálculos necesarios para resolver sistemas de ecuaciones utilizando este método.
+
+### Ejemplos Gauss Seidel
+
+Se incluirán ejemplos prácticos de aplicación del Método Gauss Seidel para resolver sistemas de ecuaciones lineales, junto con su correspondiente explicación y análisis de resultados.
+
+## Método Eliminación Gaussiana
+
+### Descripción Eliminación Gaussiana
+
+Aquí se proporcionará una descripción general del Método Eliminación Gaussiana, incluyendo su origen, fundamentos teóricos y condiciones de aplicabilidad.
+
+### Algoritmo Eliminación Gaussiana
+
+Se presentará el algoritmo paso a paso del Método Eliminación Gaussiana, detallando los cálculos necesarios para resolver sistemas de ecuaciones utilizando este método.
+
+### Ejemplos Eliminación Gaussiana
+
+Se incluirán ejemplos prácticos de aplicación del Método Eliminación Gaussiana para resolver sistemas de ecuaciones lineales, junto con su correspondiente explicación y análisis de resultados.
+
+## Método Jacobi
+
+### Descripción Jacobi
+
+Aquí se proporcionará una descripción general del Método Jacobi, incluyendo su origen, fundamentos teóricos y condiciones de aplicabilidad.
+
+### Algoritmo Jacobi
+
+Se presentará el algoritmo paso a paso del Método Jacobi, detallando los cálculos necesarios para resolver sistemas de ecuaciones utilizando este método.
+
+### Ejemplos Jacobi
+
+Se incluirán ejemplos prácticos de aplicación del Método Jacobi para resolver sistemas de ecuaciones lineales, junto con su correspondiente explicación y análisis de resultados.
+
 
 ## Contribuciones y Retroalimentación:
 
