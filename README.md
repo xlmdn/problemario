@@ -29,14 +29,14 @@ Jacobi
 - [Descripción](#descripción-gauss-seidel)
 - [Algoritmo](#algoritmo-gauss-seidel)
 - [Ejemplos](#ejemplos-gauss-seidel)
-- - [Programa](./metodoGaussSeidel/)
+- [Programa](./metodo_GaussSeidel/)
 
 ## Método Eliminación Gaussiana
 
 - [Descripción](#descripción-eliminación-gaussiana)
 - [Algoritmo](#algoritmo-eliminación-gaussiana)
 - [Ejemplos](#ejemplos-eliminación-gaussiana)
-- - [Programa](./Eliminacion_gauss/)
+-  [Programa](./Eliminacion_gauss/)
 
 ## Método Jacobi
 
