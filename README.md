@@ -310,10 +310,21 @@ Convergencia: Si se ha alcanzado la convergencia, devolver el vector de solucion
 
 Este repositorio es un recurso en constante evolución, y tu contribución es fundamental para mejorarlo. Si tienes sugerencias, correcciones o nuevos recursos que te gustaría compartir, no dudes en hacer una contribución al repositorio. Además, apreciamos cualquier retroalimentación que tengas sobre tu experiencia utilizando este material.
 
-¡Esperamos que este repositorio sea una herramienta valiosa para tu estudio y práctica de Métodos Numéricos! Si tienes alguna pregunta o necesitas ayuda adicional, no dudes en ponerte en contacto con nosotros.
+¡Esperamos que este repositorio sea una herramienta valiosa para tu estudio y práctica de Métodos Numéricos! Si tienes alguna pregunta o necesitas ayuda adicional, no dudes en ponerte en contacto.
 
 ¡Que disfrutes explorando el mundo de los Métodos Numéricos!
 
-Atentamente,
+Atentamente, 
 
-[Nombre del Equipo/Mantenedor del Repositorio]
+[Axel Madin]
+
+
+Probleamrio elaborado por
+
+Cortes Hernández Cristian
+
+Garcia Jaimes José Miguel
+
+Madin Hernández Axel 
+
+Romero López Jorge de Jesús
