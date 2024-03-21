@@ -1,7 +1,7 @@
 
 ## Repositorio de Problemas y Programas de Métodos Numéricos
 
-¡Bienvenido al repositorio de Métodos Numéricos Tema 3 - !
+¡Bienvenido al repositorio de Métodos Numéricos Tema 3 - insertar titulodel tema !
 
 Aquí encontrarás una colección completa de **problemarios**, **programas** y **pruebas de ejecución** relacionados con los diferentes metodos de solución de sistemas de ecuaciones lineales de la materia de Métodos Numéricos. 
 
@@ -44,11 +44,16 @@ Aquí encontrarás una colección completa de **problemarios**, **programas** y 
 
 ### Descripción Gauss Jordan
 
-Aquí se proporcionará una descripción general del Método Gauss Jordan, incluyendo su origen, fundamentos teóricos y condiciones de aplicabilidad.
+El Método de Gauss-Jordan es un algoritmo utilizado para resolver sistemas de ecuaciones lineales. Es una variación del método de eliminación gaussiana, donde se utiliza la reducción por filas para convertir la matriz de coeficientes en una forma escalonada reducida, facilitando así la resolución del sistema.
 
 ### Algoritmo Gauss Jordan
 
-Se presentará el algoritmo paso a paso del Método Gauss Jordan, detallando los cálculos necesarios para resolver sistemas de ecuaciones utilizando este método.
+-En primer lugar, se registra el sistema de ecuaciones en forma de matriz, conocida también como matriz aumentada. 
+
+-Posteriormente, se procede a transformar esta matriz en una matriz identidad. Para lograrlo, se pueden llevar a cabo las siguientes operaciones en las filas de la matriz:
+cambiar el orden de las filas, multiplicar o dividir todos los elementos de una fila por un número distinto de cero, o sustituir una fila por la suma de esa misma fila y otra fila multiplicada por un número. 
+
+-Una vez que se ha alcanzado la forma de matriz identidad, las soluciones del sistema de ecuaciones son simplemente los términos independientes de la matriz resultante.
 
 ### Ejemplos Gauss Jordan
 
