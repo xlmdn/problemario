@@ -45,7 +45,7 @@ En este repositorio, encontrarás no solo la descripción teórica de cada méto
 - [Descripción](#descripción-jacobi)
 - [Algoritmo](#algoritmo-jacobi)
 - [Ejemplos](#ejemplos-jacobi)
-- [Implementación](implementación-jacobi)
+- [Implementación](Implementación-Jacobi)
 ---
 
 ## Método Gauss Jordan
