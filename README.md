@@ -3,19 +3,21 @@
 
 ¡Bienvenido al repositorio de Métodos Numéricos Tema 3 - Métodos de solución de sistemas de ecuaciones lineales !
 
-Aquí encontrarás una colección completa de **algoritmos**, **programas** y **pruebas de ejecución** relacionados con los diferentes metodos de solución de sistemas de ecuaciones lineales de la materia de Métodos Numéricos:
+Este repositorio está dedicado a brindarte acceso a una variedad de algoritmos, programas y pruebas de ejecución que abordan los siguientes métodos de solución de sistemas de ecuaciones lineales:
 
-Eliminación Gaussiana
+Eliminación Gaussiana: Un algoritmo fundamental que transforma una matriz de coeficientes en su forma triangular equivalente, simplificando así la solución del sistema de ecuaciones.
 
-Gauss Jordan
+Gauss Jordan: Un método avanzado que extiende los principios de la eliminación gaussiana para obtener la forma escalonada reducida de una matriz, proporcionando soluciones precisas y detalladas para sistemas de ecuaciones lineales.
 
-Gauss Seidel
+Gauss Seidel: Un enfoque iterativo que mejora continuamente las aproximaciones de las soluciones del sistema de ecuaciones lineales, ofreciendo convergencia rápida y eficiente en ciertos tipos de problemas.
 
-Jacobi
+Jacobi: Un método iterativo que se basa en la descomposición de la matriz de coeficientes en componentes diagonales y no diagonales, facilitando la iteración de soluciones hasta alcanzar la convergencia deseada.
+
+
+En este repositorio, encontrarás no solo la descripción teórica de cada método, sino también implementaciones prácticas en forma de programas y algoritmos. Además, se proporcionan pruebas de ejecución detalladas que te guiarán a través del proceso de aplicación de cada método, brindándote una comprensión profunda y práctica de su funcionamiento.
 
 ## Contenido del Repositorio
 
-# Índice
 ## Método Gauss Jordan
 
 - [Descripción](#descripción-gauss-jordan)
@@ -316,10 +318,10 @@ Este repositorio es un recurso en constante evolución, y tu contribución es fu
 
 Atentamente, 
 
-[Axel Madin]
+Axel Madin
 
 
-Probleamrio elaborado por
+#### Problemario elaborado por:
 
 Cortes Hernández Cristian
 
