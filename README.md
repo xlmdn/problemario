@@ -55,9 +55,54 @@ cambiar el orden de las filas, multiplicar o dividir todos los elementos de una 
 
 -Una vez que se ha alcanzado la forma de matriz identidad, las soluciones del sistema de ecuaciones son simplemente los términos independientes de la matriz resultante.
 
-### Ejemplos Gauss Jordan
+## Ejemplos Gauss Jordan
 
-Se incluirán ejemplos prácticos de aplicación del Método Gauss Jordan para resolver sistemas de ecuaciones lineales, junto con su correspondiente explicación y análisis de resultados.
+## Ejemplo 1
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/b7fc09c5-c508-4637-9acd-bb039cae35a8)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/805d032f-013f-4894-bb5b-7743f641151a)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/840ed781-6ba4-4f4f-af9b-8e16870231bd)
+
+## Ejemplo 2
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/3141cbf7-a129-4eb2-b89f-cd8902e4c2f9)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/12e4ba00-8fca-4ad8-897d-1c21df43b987)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/bf8f04ea-47db-497e-ac80-16e838e97072)
+
+
+## Ejemplo 3
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/a902a0f5-fe5b-41a5-97d5-f84553d87c86)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/ea0a7857-abd1-4b31-9297-7f0ec1222bea)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/c0600fdb-042d-466a-9ce1-80e6d9009b4b)
+
+## Ejemplo 4
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/c96cf10c-6258-4ec2-ad62-a2247e053429)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/871cef1d-64ba-497c-8eec-bd89f7380da3)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/bd345a8e-5748-4fea-b660-cd2f8a056d51)
+
+## Ejemplo 5
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/f8e099db-8760-482f-829b-9b7d206077f6)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/61f04ce2-a730-4508-85b2-a009b85f0882)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/c2de7af7-329f-4702-ba19-7b094c5e04c0)
+
+
+
+
+
+
 
 ## Método Gauss Seidel
 
