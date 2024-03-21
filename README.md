@@ -168,42 +168,63 @@ cambiar el orden de las filas, multiplicar o dividir todos los elementos de una 
 
 ## Ejemplo 1
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/b7fc09c5-c508-4637-9acd-bb039cae35a8)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/805d032f-013f-4894-bb5b-7743f641151a)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/840ed781-6ba4-4f4f-af9b-8e16870231bd)
 
 ## Ejemplo 2
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/3141cbf7-a129-4eb2-b89f-cd8902e4c2f9)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/12e4ba00-8fca-4ad8-897d-1c21df43b987)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/bf8f04ea-47db-497e-ac80-16e838e97072)
 
 
 ## Ejemplo 3
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/a902a0f5-fe5b-41a5-97d5-f84553d87c86)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/ea0a7857-abd1-4b31-9297-7f0ec1222bea)
+
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/c0600fdb-042d-466a-9ce1-80e6d9009b4b)
 
 ## Ejemplo 4
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/c96cf10c-6258-4ec2-ad62-a2247e053429)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/871cef1d-64ba-497c-8eec-bd89f7380da3)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/bd345a8e-5748-4fea-b660-cd2f8a056d51)
 
 ## Ejemplo 5
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/f8e099db-8760-482f-829b-9b7d206077f6)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/61f04ce2-a730-4508-85b2-a009b85f0882)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/c2de7af7-329f-4702-ba19-7b094c5e04c0)
 
@@ -336,43 +357,66 @@ Repetir hasta convergencia.
 
 ## Ejemplo 1
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/5f447999-4ab3-4b51-bbf2-3eda3a3e8539)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/d4517535-3b2d-48c6-8194-a6e7a059d19e)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/d521dd63-e3c0-42ca-b1c4-f52e6e03ecbc)
 
 ## Ejemplo 2
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/d7eca18d-8ee3-4b0a-8772-3e46aa647eeb)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/423c58fd-8da7-400b-aa16-e4ce2dc21a25)
+
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/2471c22f-0f4b-4155-9bc8-04f6e2f68c75)
 
 ## Ejemplo 3
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/2e8d78e6-728a-4ab0-bcb1-bd9b267d4805)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/554bec45-0e89-4eae-a0dc-6bd44bd3786a)
 
+
+salida
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/c012cc3a-939e-4fd8-b3b4-e452308978e4)
 
 ## Ejemplo 4
+
+entrada
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/77bfcce2-8244-49e2-a5b5-c0c8ef0f1364)
 
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/cc748e25-01de-4f41-be38-3721190988df)
 
+
+salida
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/6475cd9e-7549-4422-9c7d-dd363a5414df)
 
 
 ## Ejemplo 5
 
+entrada
+
 ![image](https://github.com/xlmdn/problemario/assets/147437527/baa3dae9-87d1-40c8-962e-247f84b41eda)
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/22c8ef2b-5cc5-4131-9183-67dde584441b)
+
+salida
 
 ![image](https://github.com/xlmdn/problemario/assets/147437527/29e55634-2f44-45e3-b1e5-f17a32b5088f)
 
