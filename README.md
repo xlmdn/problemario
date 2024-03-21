@@ -8,12 +8,6 @@ Aquí encontrarás una colección completa de **problemarios**, **programas** y 
 ## Contenido del Repositorio
 
 # Índice
-
-1. [Método Gauss Jordan](#método-gauss-jordan)
-2. [Método Gauss Seidel](#método-gauss-seidel)
-3. [Método Eliminación Gaussiana](#método-eliminación-gaussiana)
-4. [Método Jacobi](#método-jacobi)
-
 ## Método Gauss Jordan
 
 - [Descripción](#descripción-gauss-jordan)
@@ -108,15 +102,70 @@ cambiar el orden de las filas, multiplicar o dividir todos los elementos de una 
 
 ### Descripción Gauss Seidel
 
-Aquí se proporcionará una descripción general del Método Gauss Seidel, incluyendo su origen, fundamentos teóricos y condiciones de aplicabilidad.
+El método de Gauss-Seidel es un algoritmo iterativo utilizado para resolver sistemas de ecuaciones lineales. Su objetivo es encontrar las soluciones aproximadas del sistema iterando a través de cada ecuación y actualizando las incógnitas en cada paso. 
 
 ### Algoritmo Gauss Seidel
 
-Se presentará el algoritmo paso a paso del Método Gauss Seidel, detallando los cálculos necesarios para resolver sistemas de ecuaciones utilizando este método.
+-Inicialización: Establecer una estimación inicial para las incógnitas.
+
+-Iteración:
+
+Para cada ecuación del sistema:
+
+Resolver la ecuación utilizando las incógnitas actualizadas.
+
+Actualizar las incógnitas con los nuevos valores calculados.
+
+Repetir hasta convergencia.
+
+-Condición de Convergencia: Verificar si se alcanza una convergencia aceptable.
+
+-Salida: Tomar las soluciones aproximadas como soluciones del sistema.
 
 ### Ejemplos Gauss Seidel
 
-Se incluirán ejemplos prácticos de aplicación del Método Gauss Seidel para resolver sistemas de ecuaciones lineales, junto con su correspondiente explicación y análisis de resultados.
+## Ejemplo 1
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/5f447999-4ab3-4b51-bbf2-3eda3a3e8539)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/d4517535-3b2d-48c6-8194-a6e7a059d19e)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/d521dd63-e3c0-42ca-b1c4-f52e6e03ecbc)
+
+## Ejemplo 2
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/d7eca18d-8ee3-4b0a-8772-3e46aa647eeb)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/423c58fd-8da7-400b-aa16-e4ce2dc21a25)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/2471c22f-0f4b-4155-9bc8-04f6e2f68c75)
+
+## Ejemplo 3
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/2e8d78e6-728a-4ab0-bcb1-bd9b267d4805)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/554bec45-0e89-4eae-a0dc-6bd44bd3786a)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/c012cc3a-939e-4fd8-b3b4-e452308978e4)
+
+## Ejemplo 4
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/77bfcce2-8244-49e2-a5b5-c0c8ef0f1364)
+
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/cc748e25-01de-4f41-be38-3721190988df)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/6475cd9e-7549-4422-9c7d-dd363a5414df)
+
+
+## Ejemplo 5
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/baa3dae9-87d1-40c8-962e-247f84b41eda)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/22c8ef2b-5cc5-4131-9183-67dde584441b)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/29e55634-2f44-45e3-b1e5-f17a32b5088f)
+
 
 ## Método Eliminación Gaussiana
 
