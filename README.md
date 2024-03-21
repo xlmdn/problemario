@@ -171,30 +171,128 @@ Repetir hasta convergencia.
 
 ### Descripción Eliminación Gaussiana
 
-Aquí se proporcionará una descripción general del Método Eliminación Gaussiana, incluyendo su origen, fundamentos teóricos y condiciones de aplicabilidad.
+La eliminación gaussiana es un método utilizado para resolver sistemas de ecuaciones lineales mediante la transformación de la matriz aumentada del sistema en una forma escalonada mediante operaciones elementales de fila. Este método es fundamental en álgebra lineal y es utilizado en numerosos campos de la ciencia y la ingeniería.
 
 ### Algoritmo Eliminación Gaussiana
 
-Se presentará el algoritmo paso a paso del Método Eliminación Gaussiana, detallando los cálculos necesarios para resolver sistemas de ecuaciones utilizando este método.
+-Inicialización: Comenzamos con una matriz aumentada que representa el sistema de ecuaciones lineales.
+
+-Iteración por filas: Recorremos la matriz por filas de arriba hacia abajo y aplicamos las siguientes operaciones para cada fila:
+
+Pivoteo parcial (opcional): Si es necesario, intercambiamos filas para asegurar que el elemento en la posición de pivote (el primer elemento no nulo de la fila actual) sea el mayor en magnitud entre todos los elementos de la columna.
+
+Escalonamiento: Convertimos todos los elementos debajo del pivote en ceros, utilizando operaciones de fila. Para cada fila por debajo de la fila actual, restamos un múltiplo apropiado de la fila actual de manera que el elemento correspondiente se vuelva cero.
+
+-Verificación de solución única: Después de llevar la matriz a su forma escalonada, verificamos si el sistema tiene una única solución, ninguna solución o infinitas soluciones. Esto puede hacerse verificando si hay alguna fila completamente nula o si hay una fila con ceros en todas las columnas excepto en la última.
+
+-Sustitución hacia atrás (si es necesario): Si el sistema tiene una solución única, realizamos la sustitución hacia atrás para encontrar los valores de las incógnitas.
 
 ### Ejemplos Eliminación Gaussiana
 
-Se incluirán ejemplos prácticos de aplicación del Método Eliminación Gaussiana para resolver sistemas de ecuaciones lineales, junto con su correspondiente explicación y análisis de resultados.
+## Ejemplo 1
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/3a376ee5-0126-42d2-909c-a57c5bd2daf7)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/230d0971-fb8d-419e-bb6f-c77479142103)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/0fc9c903-f3d8-4fa4-b0ef-63b056bd2a6d)
+
+## Ejemplo 2
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/995e3c85-013a-49bd-ba7f-1b54ab053b2e)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/de440c60-bdeb-4498-9737-9f8df80d89c2)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/40ad4f99-3581-4643-9553-bbd7e1524dd3)
+
+
+
+## Ejemplo 3
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/e3706641-99e0-4b8f-8048-9e6f72b89cf8)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/725c751e-6086-4184-9143-07dcc5589136)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/84447f21-399b-4707-aaa3-62d01fd05767)
+
+## Ejemplo 4
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/250da839-6831-47b8-a974-6522a47e298b)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/4a85f20a-9072-42a6-b033-f4065cc5bb71)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/d9e18a9e-1259-4801-abc4-c7d005b49b23)
+
+
+## Ejemplo 5
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/a7358a9c-3f3a-4b04-ba8d-42cc1b2ea91d)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/85b922eb-83a1-42db-81eb-2a1435ce72f9)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/e1f3ef3d-dd53-4f14-b6ab-082d3d8d3e67)
+
 
 ## Método Jacobi
 
 ### Descripción Jacobi
 
-Aquí se proporcionará una descripción general del Método Jacobi, incluyendo su origen, fundamentos teóricos y condiciones de aplicabilidad.
+El método de Jacobi es un algoritmo iterativo utilizado para resolver sistemas de ecuaciones lineales, especialmente cuando la matriz del sistema es grande y dispersa. El método se basa en la descomposición de la matriz del sistema en una matriz diagonal y el resto de los términos.
 
 ### Algoritmo Jacobi
 
-Se presentará el algoritmo paso a paso del Método Jacobi, detallando los cálculos necesarios para resolver sistemas de ecuaciones utilizando este método.
+-Descomposición de la matriz: Separar la matriz del sistema en una matriz diagonal y dos matrices triangulares.
+
+-Iteración inicial: Seleccionar un vector inicial de soluciones.
+
+-Iteración: Evaluar cada una de las funciones con los valores iniciales de forma iterativa para actualizar el vector de soluciones en cada paso.
+
+Criterio de parada: Verificar si se ha alcanzado la convergencia.
+
+Convergencia: Si se ha alcanzado la convergencia, devolver el vector de soluciones aproximado.
 
 ### Ejemplos Jacobi
 
-Se incluirán ejemplos prácticos de aplicación del Método Jacobi para resolver sistemas de ecuaciones lineales, junto con su correspondiente explicación y análisis de resultados.
+## Ejemplo 1
 
+![image](https://github.com/xlmdn/problemario/assets/147437527/e12652c0-3407-4fb1-84d0-fd402bc1e8d3)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/1969ac1f-202d-41da-a533-8ac8f4a995ee)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/e1fc71c9-beff-4c26-89ee-719b8f3dd32e)
+
+## Ejemplo 2
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/8e43e1fa-1596-4765-9be6-d25ed2423f9b)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/308953d4-f618-405d-8d1d-86a945a4be30)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/55d82ccf-23ce-4f06-911b-cef7a84e85fe)
+
+## Ejemplo 3
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/f0c0c570-c266-4a5e-81a6-2ff3c9b9332b)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/31ef96ce-dd82-4381-b718-62ea7ed70582)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/df112e9f-c893-44d6-b82d-22344b88d0eb)
+
+## Ejemplo 4
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/5f720301-4cf4-4afc-a495-d8a48b3b79e9)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/aca01853-0948-45e8-9529-e1f26ea3248a)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/653f3ff1-9c36-4a84-a222-2ac2b0a8d049)
+
+
+## Ejemplo 5
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/9544e680-3f53-4d3c-9ff4-4ed72fcb4d12)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/51d4ea0b-fe2c-44a2-87b4-474b9ccce24e)
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/d27cf32b-ba74-4bf4-af52-bb2e14ff546e)
 
 ## Contribuciones y Retroalimentación:
 
