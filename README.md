@@ -54,6 +54,9 @@ En este repositorio, encontrarás no solo la descripción teórica de cada méto
 
 El Método de Gauss-Jordan es un algoritmo utilizado para resolver sistemas de ecuaciones lineales. Es una variación del método de eliminación gaussiana, donde se utiliza la reducción por filas para convertir la matriz de coeficientes en una forma escalonada reducida, facilitando así la resolución del sistema.
 
+![image](https://github.com/xlmdn/problemario/assets/147437527/f0cc8cb6-f42a-4a5a-bddc-df4177c6bc3a)
+
+
 ### Algoritmo Gauss Jordan
 
 -En primer lugar, se registra el sistema de ecuaciones en forma de matriz, conocida también como matriz aumentada. 
@@ -117,6 +120,9 @@ cambiar el orden de las filas, multiplicar o dividir todos los elementos de una 
 ### Descripción Gauss Seidel
 
 El método de Gauss-Seidel es un algoritmo iterativo utilizado para resolver sistemas de ecuaciones lineales. Su objetivo es encontrar las soluciones aproximadas del sistema iterando a través de cada ecuación y actualizando las incógnitas en cada paso. 
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/e1202242-9365-4d07-8471-8bb3943e292f)
+
 
 ### Algoritmo Gauss Seidel
 
@@ -187,6 +193,9 @@ Repetir hasta convergencia.
 
 La eliminación gaussiana es un método utilizado para resolver sistemas de ecuaciones lineales mediante la transformación de la matriz aumentada del sistema en una forma escalonada mediante operaciones elementales de fila. Este método es fundamental en álgebra lineal y es utilizado en numerosos campos de la ciencia y la ingeniería.
 
+![image](https://github.com/xlmdn/problemario/assets/147437527/81b465d1-d655-465b-862a-d56b6e940917)
+
+
 ### Algoritmo Eliminación Gaussiana
 
 -Inicialización: Comenzamos con una matriz aumentada que representa el sistema de ecuaciones lineales.
@@ -252,6 +261,9 @@ Escalonamiento: Convertimos todos los elementos debajo del pivote en ceros, util
 ### Descripción Jacobi
 
 El método de Jacobi es un algoritmo iterativo utilizado para resolver sistemas de ecuaciones lineales, especialmente cuando la matriz del sistema es grande y dispersa. El método se basa en la descomposición de la matriz del sistema en una matriz diagonal y el resto de los términos.
+
+![image](https://github.com/xlmdn/problemario/assets/147437527/db4f64b8-f9e2-4d32-abf5-75c184d62b2e)
+
 
 ### Algoritmo Jacobi
 
